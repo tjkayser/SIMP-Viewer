@@ -56,7 +56,11 @@
     // ADD a point cloud
     const tilesetPC = new Cesium.Cesium3DTileset({
       url: Cesium.IonResource.fromAssetId(811515),
-      maximumScreenSpaceError: 12
+      maximumScreenSpaceError: 12,
+      pointCloudShading: {
+        attenuation: true,
+        maximumAttenuation: 2
+      }
     });
     viewer.scene.primitives.add(tilesetPC);
 
