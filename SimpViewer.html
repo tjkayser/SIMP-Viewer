@@ -37,7 +37,7 @@
     // the acces token from cesium website
     Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJlZDgxYmM3YS1lYTcyLTQ5NTgtYTAwNS03NGFhNTExYmEwY2IiLCJpZCI6NjE2NTksImlhdCI6MTYyNjI1NDQxMn0.vTMIdRK192vGHtVlStuCnAhq6chBAWJsT8eQ4kNENq0';
 
-    //  create a new viewer with a DSM and base image  
+    //  create a new viewer with a DSM and base image
     var viewer = new Cesium.Viewer("cesiumContainer", {
       shouldAnimate: false,
       baseLayerPicker: false,
@@ -131,7 +131,9 @@
             ]
           }
         });
-        document.getElementById("button1").style.backgroundImage = "url(./Textures/classificationButton.png)"
+        //document.getElementById("button1").style.backgroundImage = "url(./Textures/classificationButton.png)"
+        document.getElementById("button1").style.backgroundImage = "url(./Textures/cloudButton-legende.png)"
+
         PCButtonVar = "class";
       }
     }
